@@ -1,2 +1,1 @@
-# password-scrabble
-Module Three Challenge
+# Password Generator Starter Code
