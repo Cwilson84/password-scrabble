@@ -24,7 +24,35 @@ function generatePassword() {
       alert(tryAgain);
       return "Looks like we missed something, " + userName + ".  Click the button to try again.";
     }
+
+  var upperConfirm = confirm(`Password may contain uppercase letters.  Press "OK" to include uppercase letters.`)
+  if (upperConfirm === true) {
+      userFullArray = userFullArray.concat(upperArray);
+  } else {
+      alert(`You must select "OK" to one or more categories to continue.`)
   }
+
+  var lowerConfirm = confirm(`Password may contain lowercase letters.  Press "OK" to include lowercase letters.`)
+  if (lowerConfirm === true) {
+      userFullArray = userFullArray.concat(lowerArray);
+  }
+  
+  var numberConfirm = confirm(`Password may contain numbers.  Press "OK" to include numbers.`)
+  if (numberConfirm === true) {
+      userFullArray = userFullArray.concat(numberArray);
+  }
+
+  var specialConfirm = confirm(`Password may contain special characters.  Press "OK" to include special characters.`)
+  if (specialConfirm === true) {
+      userFullArray = userFullArray.concat(specialArray);
+  }
+
+  if (upperConfirm === false && lowerConfirm === false && numberConfirm === false && specialConfirm === false) {
+    alert(tryAgain); 
+    return `Did you remeber to choose "OK" for at least one category, ` + userName + `?  Click the button to try again.`;
+  }
+
+}
   
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
