@@ -6,18 +6,21 @@ var specialArray = ["!", "@", "#", "$", "%", "&", "*", "_", "-", "?"];
 var userFullArray = [];
 var userPasswordLength = 8;
 
-//begin generation function//
+// begin generation function
 function generatePassword() {
-  userFullArray = [];
+  userFullArray = [];// the ONE array to rule them all
   var tryAgain = "Oops...something went wrong.  I'm sorry, you'll have to try again.  Please be sure to carefully read and follow all prompts."
   var accepted = "Thank you.  Please follow all prompts to generate your secure password.";
+  var acceptedTwo = "Keep your secrets then, stranger.  Please follow all prompts to generate your secure password.";//continuity//
 
+  // get name and length of password
   var userName = prompt("Hello, please enter your name.");
-    if (userName.length > 1) {
+    if (userName.length > 0) {
       alert(accepted);
     } else {
-      alert(tryAgain);
-      return "Looks like we missed something.  Click the button to try again.";
+      alert(acceptedTwo);
+      var userName = "stranger"// continuity
+      
     }
   var userPasswordLength = prompt(`Password must be between 8 and 128 characters in length.  Please enter a length.`);
     if (userPasswordLength < 8 || userPasswordLength > 128 || isNaN(userPasswordLength)) {
@@ -25,11 +28,12 @@ function generatePassword() {
       return "Looks like we missed something, " + userName + ".  Click the button to try again.";
     }
 
+  // use confirm to create boolean to add/not add to the ONE array || variable storage for category skip validation later
   var upperConfirm = confirm(`Password may contain uppercase letters.  Press "OK" to include uppercase letters.`)
   if (upperConfirm === true) {
       userFullArray = userFullArray.concat(upperArray);
   } else {
-      alert(`You must select "OK" to one or more categories to continue.`)
+      alert(`You must select "OK" to one or more categories to continue.`)// fair warning
   }
 
   var lowerConfirm = confirm(`Password may contain lowercase letters.  Press "OK" to include lowercase letters.`)
@@ -47,9 +51,10 @@ function generatePassword() {
       userFullArray = userFullArray.concat(specialArray);
   }
 
+  // aforementioned category skip validation
   if (upperConfirm === false && lowerConfirm === false && numberConfirm === false && specialConfirm === false) {
     alert(tryAgain); 
-    return `Did you remeber to choose "OK" for at least one category, ` + userName + `?  Click the button to try again.`;
+    return `Did you remeber to choose "OK" for at least one category, ` + userName + `?  Click the button to try again.`;// continuity
   }
 
 }
