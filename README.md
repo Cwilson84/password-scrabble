@@ -9,8 +9,8 @@ The goal of this challenge was to modify starter code and define a function to g
 - Upon prompt allow user to select which criteria to include (optional);
 - Provided the length be from 8 to 128 characters and the characters be of one or more categories (semi);
 - Categories include uppercase and lowercase letters as well as numbers 0 to 9 and select special characters;
-- Category adherence is validated (you must include one or more) for funtion to operate;
-- Length adherence is validated (you must choose a numeral in range) for funtion to operate;
+- Category adherence is validated (you must include one or more) for function to operate;
+- Length adherence is validated (you must choose a numeral in range) for function to operate;
 - Upon completion a random password is generated matching all chosen criteria and written to the page;
 
 While exploring the function of this little project program, one may also find several little additions that were for fun as much as function, including:
