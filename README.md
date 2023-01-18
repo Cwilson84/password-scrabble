@@ -31,5 +31,5 @@ Or view it live [cwilson84.github.io/password-scrabble](https://cwilson84.github
 
 ## Credits
 
-[W3 Schools](https://www.w3schools.com), [MDN Web Docs](https://developer.mozilla.org) and, of course, [Google](https://www.google.com) had me in moments of "Why won't you do what you should do here".  If you guessed I was wrong, yup.  That said, doing this in this way was a learning experience I didnt expect, and I feel much more confident in my ability to find different solutions to problems.  I solved this in two similar but differnt ways (one big array || if else bonanza) before finding the way that gave me what I wanted, plus what was requried (ONE array to rule them all).  Did I mention I had fun with this one? Function. Meow.
+[W3 Schools](https://www.w3schools.com), [MDN Web Docs](https://developer.mozilla.org) and, of course, [Google](https://www.google.com) had me covered in moments of "Why won't you do what you should do here".  That said, doing this in this way was a learning experience I didn't expect, and I feel much more confident in my ability to find different solutions to problems because of it.  I solved this in two similar but differnt ways (one big array || if else bonanza) before finding the way that gave me what I wanted, plus what was requried (ONE array to rule them all).  Did I mention I had fun with this one? Function. Meow.
 
